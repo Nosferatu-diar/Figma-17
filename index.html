@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Figma-17</title>
+		<!-- swiperJS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./src/output.css" />
+	</head>
+	<body>
+		<!-- header/nav -->
+		<section>
+			<!-- nav -->
+			<div class="bg-[#e4e4e4]">
+				<nav
+					class="flex items-center justify-between w-[80%] m-auto pt-3 pb-3 max-[1440px]:w-[90%] max-[1024px]:w-[95%] max-[768px]:w-[100%]"
+				>
+					<div class="flex items-center gap-1">
+						<label class="cursor-pointer" for="city">Ваш город:</label>
+						<select
+							class="flex items-center bg-[#e4e4e4] focus:outline-none cursor-pointer"
+							name="city"
+							id="city"
+						>
+							<option value="">Москва</option>
+							<option value="">Tashkent</option>
+							<option value="">US</option>
+							<img
+								class="cursor-pointer"
+								src="./assets/svg/nav_arrow_bottom.svg"
+								alt="arrow down"
+							/>
+						</select>
+					</div>
+					<div class="flex flex-col items-center max-[1000px]:hidden">
+						<p
+							class="text-lg font-semibold hover:underline decoration-blue-300 max-[1300px]:text-base max-[1200px]:text-sm"
+						>
+							Москва, г. Химки, ул. Рабочая, дом 2
+						</p>
+						<p class="font-light hover:underline decoration-blue-300">
+							с 09:00 до 20:00 без выходных
+						</p>
+					</div>
+					<div class="flex flex-col items-center max-[1000px]:hidden">
+						<p
+							class="max-[1200px]:text-sm text-lg font-semibold hover:underline decoration-blue-300 max-[1300px]:text-base"
+						>
+							+7 (495) 970-45-62 / +7 (915) 202-72-57
+						</p>
+						<p
+							class="font-light underline hover:underline hover:decoration-blue-300"
+						>
+							Перезвонить?
+						</p>
+					</div>
+					<div class="flex items-center gap-3">
+						<p class="">Связаться:</p>
+						<img
+							class="cursor-pointer"
+							src="./assets/img/telegram.png"
+							alt="apps"
+						/>
+						<img
+							class="cursor-pointer"
+							src="./assets/img/whatsapp.png"
+							alt="apps"
+						/>
+						<img
+							class="cursor-pointer"
+							src="./assets/img/viber.png"
+							alt="apps"
+						/>
+					</div>
+				</nav>
+			</div>
+			<!-- heaedr -->
+			<div class="bg-white shadow-lg rounded-lg pt-5 pb-5">
+				<header
+					class="w-[80%] m-auto flex items-center justify-between max-[1440px]:w-[90%] max-[1024px]:w-[95%]"
+				>
+					<div class="max-[1150px]:hidden">
+						<p class="font-semibold hover:underline decoration-blue-500">
+							grandlesmarket@mail.ru
+						</p>
+					</div>
+					<div class="flex items-center gap-5">
+						<div
+							class="flex items-center gap-10 max-[1200px]:gap-4 max-[850px]:hidden"
+						>
+							<div
+								class="flex items-center gap-2 cursor-pointer hover:underline decoration-blue-500"
+							>
+								<p class="font-semibold">Каталог</p>
+								<img src="./assets/svg/nav_arrow_bottom.svg" alt="arrow" />
+							</div>
+							<div
+								class="flex items-center gap-2 cursor-pointer hover:underline decoration-blue-500"
+							>
+								<p class="font-semibold">Покупателю</p>
+								<img src="./assets/svg/nav_arrow_bottom.svg" alt="arrow" />
+							</div>
+						</div>
+						<img class="" src="./assets/svg/MainLogo.svg" alt="Logo" />
+						<div
+							class="flex items-center gap-10 max-[1200px]:gap-4 max-[850px]:hidden"
+						>
+							<div
+								class="flex items-center gap-2 cursor-pointer hover:underline decoration-blue-500"
+							>
+								<p class="font-semibold">О компании</p>
+								<img src="./assets/svg/nav_arrow_bottom.svg" alt="arrow" />
+							</div>
+							<div
+								class="flex items-center gap-2 cursor-pointer hover:underline decoration-blue-500"
+							>
+								<p class="font-semibold">Контакты</p>
+								<img src="./assets/svg/nav_arrow_bottom.svg" alt="arrow" />
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center gap-6">
+						<img
+							class="hidden max-[850px]:block cursor-pointer"
+							src="./assets/img/icon_burger.png"
+							alt="icon"
+						/>
+						<img
+							class="cursor-pointer"
+							src="./assets/svg/calculator.svg"
+							alt="icons"
+						/>
+						<img
+							class="cursor-pointer"
+							src="./assets/svg/icon_search.svg"
+							alt="icons"
+						/>
+						<img
+							class="cursor-pointer"
+							src="./assets/img/basket.png"
+							alt="icons"
+						/>
+					</div>
+				</header>
+			</div>
+		</section>
+
+		<!-- showcase -->
+		<section
+			class="w-[80%] m-auto bg-[#f5f5f5] flex items-center justify-between mt-20 max-[1440px]:w-[90%] max-[1024px]:w-[95%]"
+		>
+			<!-- left -->
+			<div class="flex flex-col pl-20 gap-10 items-start">
+				<p class="font-bold text-5xl">
+					Интернет-магазин <br />
+					пиломатериалов
+				</p>
+				<p class="font-semibold">
+					С оперативной доставкой по Москве <br />
+					и Московской области
+				</p>
+				<button
+					class="text-white bg-[#ff9b04] px-4 py-2 rounded-lg hover:bg-yellow-400"
+				>
+					Перейти в каталог
+				</button>
+			</div>
+			<!-- right -->
+			<div class="relative">
+				<img src="./assets/img/wood.png" alt="wood" />
+				<img class="absolute top-[70px]" src="./assets/img/1.png" alt="img" />
+				<img
+					class="absolute top-[45%] left-[-70px]"
+					src="./assets/img/2.png"
+					alt="img"
+				/>
+				<img
+					class="absolute top-[70%] left-[-40px]"
+					src="./assets/img/3.png"
+					alt="img"
+				/>
+			</div>
+		</section>
+
+		<!-- catalog -->
+		<section
+			class="w-[80%] m-auto flex flex-col gap-5 pt-20 pb-10 max-[1440px]:w-[90%] max-[1024px]:w-[95%]"
+		>
+			<!-- catalog poduct -->
+			<div class="flex justify-between">
+				<div class="flex flex-col gap-3">
+					<p class="font-bold text-3xl">Каталог продукции</p>
+					<p>
+						Представлен качественными пиломатериалами <br />
+						для различных нужд строительства
+					</p>
+				</div>
+				<div class="flex items-end">
+					<button
+						class="border border-solid border-black px-8 py-3 rounded-xl hover:bg-slate-400"
+					>
+						Перейти в каталог
+					</button>
+				</div>
+			</div>
+
+			<div class="flex flex-wrap gap-3 pt-10">
+				<img class="w-[24%]" src="./assets/img/card1.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card2.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card3.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card4.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card5.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card6.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card7.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card8.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card9.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card10.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card11.png" alt="img" />
+				<img class="w-[24%]" src="./assets/img/card12.png" alt="img" />
+			</div>
+
+			<!-- GrandLesMarket -->
+			<div class="bg-[#f5f5f5] flex flex-col mt-10 p-10 gap-10 pr-40">
+				<p
+					class="font-bold text-8xl text-[#ff9b04] max-[1080px]:text-6xl max-[1080px]:text-center"
+				>
+					GRANDLESMARKET
+				</p>
+				<p
+					class="font-bold text-5xl max-[1080px]:text-3xl max-[1080px]:text-center"
+				>
+					МАГАЗИН ПИЛОМАТЕРИАЛОВ
+				</p>
+				<p class="max-[1000px]:text-sm max-[1000px]:text-center">
+					Мы стремимся обеспечивать потребности самых разных заказчиков в
+					качественной древесине для разных нужд строительства. Мы постоянно
+					расширяем линейку пиломатериалов для продажи, в нашем каталоге
+					представлены изделия с разными характеристиками и уровня качества,
+					чтобы удовлетворить любые запросы. Ведь древесина может быть очень
+					разной и использоваться по-разному.
+				</p>
+			</div>
+
+			<!-- Popular Product -->
+			<div class="flex justify-between pt-20">
+				<div class="flex flex-col gap-3">
+					<p class="font-bold text-3xl">Популярные товары</p>
+					<p>
+						Выбирайте пиломатериалы, которые пользуются <br />
+						наибольшим спросом у наших клиентов
+					</p>
+				</div>
+				<div class="flex items-end">
+					<button
+						class="border border-solid border-black px-8 py-3 rounded-xl hover:bg-slate-400"
+					>
+						Перейти в каталог
+					</button>
+				</div>
+			</div>
+
+			<!-- swiper 1 -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./assets/img/swiper1.png" alt="img-Swiper" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/img/swiper2.png" alt="img-Swiper" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/img/swiper1.png" alt="img-Swiper" />
+					</div>
+					<div class="swiper-slide">
+						<img src="./assets/img/swiper2.png" alt="img-Swiper" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<!-- about -->
+			<div class="flex justify-between pt-20">
+				<div class="flex flex-col gap-6">
+					<h1 class="text-3xl font-bold">О компании</h1>
+					<p class="font-semibold text-lg">
+						Компания «ГрандЛесМаркет» специализируется на продажах <br />
+						высококачественных пиломатериалов.
+					</p>
+					<p class="text-[#222] text-sm">
+						Реализация осуществляется любым удобным способом: в розницу или
+						оптовыми поставками. Деятельность компании ориентирована на широкий
+						круг потребителей: крупные и небольшие строительные организации,
+						развитые торговые сети, единичные магазины индивидуальных
+						предпринимателей, а также на частных лиц. <br /><br />
+
+						Мы позиционируем себя как надежного поставщика широкого спектра
+						товаров. Представленный ассортимент соответствует действующим
+						стандартам, обеспечен технологически правильными условиями хранения
+						и транспортирования. Именно поэтому весь пиломатериал имеет отличный
+						товарный вид, сохраняет изначальные характеристики и обладает
+						стопроцентной эксплуатационной пригодностью.
+					</p>
+					<button
+						class="hover:bg-yellow-400 text-white bg-[#ff9b04] rounded-lg w-[300px] py-4"
+					>
+						ПОДРОБНЕЕ О НАС
+					</button>
+				</div>
+				<img
+					class="w-[47%] rounded-lg"
+					src="./assets/img/aboutWood.png"
+					alt="img"
+				/>
+			</div>
+
+			<!-- benefit -->
+			<div
+				class="flex items-center text-center justify-center pt-20 text-4xl font-medium"
+			>
+				<p>
+					Значимое преимущество компании – выгодное сочетание <br />
+					безупречного качества реализуемого продукта и его <br />
+					удивительно низкой цены.
+				</p>
+			</div>
+
+			<!-- benefit Cards-->
+			<div class="flex flex-wrap justify-between gap-4 pt-10 pb-10">
+				<img class="w-[49%]" src="./assets/img/benefit1.png" alt="img" />
+				<img class="w-[49%]" src="./assets/img/benefit2.png" alt="img" />
+				<img class="w-[49%]" src="./assets/img/benefit3.png" alt="img" />
+				<img class="w-[49%]" src="./assets/img/benefit4.png" alt="img" />
+				<img class="w-[49%]" src="./assets/img/benefit5.png" alt="img" />
+				<img class="w-[49%]" src="./assets/img/benefit6.png" alt="img" />
+			</div>
+
+			<!-- Calculator -->
+			<div class="flex justify-between bg-[#f5f5f5]">
+				<img class="w-[49%]" src="./assets/img/babyWorker.png" alt="" />
+				<form class="">
+					<div class="flex flex-col bg-white rounded-lg p-6 mx-6">
+						<p class="font-bold text-3xl">Калькулятор пиломатериалов</p>
+						<div class="grid grid-cols-2 pt-3 gap-3">
+							<div>
+								<label class="block text-sm text-gray-600 mb-1" for="board"
+									>Категория</label
+								>
+								<select
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-yellow-400"
+									name="Доска"
+									id="board"
+									required
+								>
+									<option value="">Доска</option>
+									<option value="">Smart board</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-sm text-gray-600 mb-1" for="board"
+									>Древесина</label
+								>
+								<select
+									required
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-yellow-400"
+									name="Доска"
+									id="board"
+								>
+									<option value="">Выберите материал</option>
+									<option value="">wood</option>
+									<option value="">heard wood</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-sm text-gray-600 mb-1" for="board"
+									>Размер</label
+								>
+								<select
+									required
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-yellow-400"
+									name="Доска"
+									id="board"
+								>
+									<option value="">50х150х6000</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-sm text-gray-600 mb-1"
+									>Количество</label
+								>
+								<div
+									class="bg-[#f5f5f5] flex items-center border border-gray-300 rounded-lg px-4 py-[2px]"
+								>
+									<input
+										required
+										type="checkbox"
+										class="mr-2 h-4 w-5 text-yellow-400 border-gray-300 rounded focus:ring focus:ring-yellow-400"
+									/>
+									<p class="text-sm text-gray-600 mr-4">М<sup>3</sup></p>
+									<input
+										required
+										type="checkbox"
+										class="mr-2 h-4 w-5 text-yellow-400 border-gray-300 rounded focus:ring focus:ring-yellow-400"
+									/>
+									<p class="text-sm text-gray-600 mr-2">ШТ</p>
+									<div class="flex items-center ml-auto">
+										<button
+											type="button"
+											class="border border-gray-300 rounded-l-lg px-2 py-1 text-gray-600"
+										>
+											-
+										</button>
+										<input
+											type="number"
+											value="1000"
+											class="w-16 text-center border-t border-b border-gray-300 focus:outline-none"
+										/>
+										<button
+											type="button"
+											class="border border-gray-300 rounded-r-lg px-2 py-1 text-gray-600"
+										>
+											+
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bg-[#FF9B04] rounded-b-lg p-4 mx-6 flex justify-between">
+						<p class="text-white flex items-center">
+							Стоимость:
+							<span class="text-white text-lg pl-1 font-bold"> 75 000 ₽</span>
+						</p>
+						<button
+							type="submit"
+							class="bg-white rounded-lg px-14 py-3 text-sm hover:bg-gray-300"
+						>
+							Оформить заказ
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<!-- How We Work -->
+			<div class="flex flex-col pt-16 text-center">
+				<p class="text-3xl font-bold pb-16">Как мы работаем</p>
+				<div class="flex items-center justify-between relative gap-5">
+					<img class="w-[15%]" src="./assets/img/work1.png" alt="img" />
+					<img
+						class="absolute left-[140px] bottom-[90px]"
+						src="./assets/svg/work_arrow.svg"
+						alt="img"
+					/>
+					<img class="w-[15%]" src="./assets/img/work2.png" alt="img" />
+					<img
+						class="absolute left-[400px] bottom-[90px]"
+						src="./assets/svg/work_arrow.svg"
+						alt="img"
+					/>
+					<img class="w-[15%]" src="./assets/img/work3.png" alt="img" />
+					<img
+						class="absolute right-[136px] bottom-[90px]"
+						src="./assets/svg/work_arrow.svg"
+						alt="img"
+					/>
+					<img class="w-[15%]" src="./assets/img/work4.png" alt="img" />
+					<img
+						class="absolute right-[396px] bottom-[90px]"
+						src="./assets/svg/work_arrow.svg"
+						alt="img"
+					/>
+					<img class="w-[15%]" src="./assets/img/work5.png" alt="img" />
+				</div>
+			</div>
+
+			<!-- Feedback -->
+			<div class="flex flex-col pt-20">
+				<div class="flex justify-between">
+					<div class="flex flex-col gap-3">
+						<p class="font-bold text-3xl">Отзывы наших клиентов</p>
+						<p>
+							Ознакомьтесь с отзывами клиентов, которые уже <br />
+							воспользовались услугами нашей компании
+						</p>
+					</div>
+					<div class="flex items-end">
+						<button
+							class="border border-solid border-black px-8 py-3 rounded-xl hover:bg-slate-400"
+						>
+							Смотреть все отзывы
+						</button>
+					</div>
+				</div>
+
+				<!-- swiper2 -->
+				<div class="swiper mySwiper pt-10">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./assets/img/feedback1.png" alt="img-Swiper" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/feedback2.png" alt="img-Swiper" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/feedback1.png" alt="img-Swiper" />
+						</div>
+						<div class="swiper-slide">
+							<img src="./assets/img/feedback2.png" alt="img-Swiper" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<!-- request -->
+			<div
+				class="flex flex-col gap-5 p-6 mt-16 mb-5 bg-[#f5f5f5] max-[1270px]:p-2"
+			>
+				<p
+					class="font-bold text-3xl max-[1250px]:text-xl max-[1250px]:text-center"
+				>
+					Оставьте заявку прямо сейчас и
+					<span class="text-[#ff9b04]"> получите скидку 20% </span> на доставку!
+				</p>
+
+				<form
+					class="flex justify-between text-[#777] max-[1250px]:flex-col max-[1250px]:items-center max-[1250px]:gap-5"
+				>
+					<div>
+						<input
+							required
+							type="text"
+							placeholder="Как к Вам обращаться?"
+							class="rounded-lg focus:outline-none focus:ring hover:bg-gray-200 focus:ring-blue-400 px-32 py-3 border border-gray-400"
+						/>
+					</div>
+					<div>
+						<input
+							type="tel"
+							required
+							title="tel"
+							placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _"
+							class="rounded-lg focus:outline-none focus:ring hover:bg-gray-200 focus:ring-blue-400 px-32 py-3 border border-gray-400"
+						/>
+					</div>
+					<button
+						id="qwe"
+						type="submit"
+						class="cursor-pointer bg-[#ff9b04] text-white rounded-md px-10 hover:bg-yellow-500 max-[1250px]:py-3"
+					>
+						Отправить заявку
+					</button>
+				</form>
+				<p class="text-[#777] text-xs max-[1250px]:text-center">
+					Нажимая кнопку “Отправить заявку”, Вы соглашаетесь с правилами
+					обработки персональных данных
+				</p>
+			</div>
+
+			<!-- footer -->
+			<footer
+				class="grid grid-cols-5 pt-10 border-b-2 max-[900px]:grid-cols-3 max-[900px]:gap-10"
+			>
+				<div class="flex flex-col">
+					<ul class="flex flex-col text-sm text-[#222] gap-2">
+						<li class="font-bold text-lg pb-5 max-[900px]:pb-0">Каталог</li>
+						<li><a href="#">Доска</a></li>
+						<li><a href="#">Брус</a></li>
+						<li><a href="#">Брусок</a></li>
+						<li><a href="#">Блокхаус</a></li>
+						<li><a href="#">Вагонка</a></li>
+						<li><a href="#">Имтиация бруса</a></li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<ul class="flex flex-col text-sm text-[#222] gap-2 pt-[55px]">
+						<li><a href="#">Половая доска</a></li>
+						<li><a href="#">Клееный пиломатериал</a></li>
+						<li><a href="#">Фанера</a></li>
+						<li><a href="#">Погонаж</a></li>
+						<li><a href="#">Лиственница</a></li>
+						<li><a href="#">Стройматериалы</a></li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<ul class="flex flex-col text-sm text-[#222] gap-2">
+						<li class="font-bold text-lg pb-5 max-[900px]:pb-0">Покапателям</li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Гарантии качества</a></li>
+						<li><a href="#">Прайс-лист</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Калькулятор</a></li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<ul class="flex flex-col text-sm text-[#222] gap-2">
+						<li class="font-bold text-lg pb-5 max-[900px]:pb-0">О компании</li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Производство</a></li>
+						<li><a href="#">Брусок</a></li>
+						<li><a href="#">Статьи</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="flex flex-col">
+					<ul class="flex flex-col text-sm text-[#222]">
+						<li class="font-bold text-lg">Контакты</li>
+						<li class="text-xs text-[#777]">
+							<a href="#"
+								>Главный офис <br />
+								<span class="text-base text-black"
+									>Москва, Будайский проезд, дом 3, этаж 1</span
+								>
+							</a>
+						</li>
+						<li class="text-xs text-[#777]">
+							<a href="#"
+								>Отдел продаж и склад<br />
+								<span class="text-base text-black"
+									>Химки, ул. Рабочая, дом 2</span
+								>
+							</a>
+						</li>
+						<li class="text-xs text-[#777]">
+							<a href="#"
+								>Телефоны <br />
+								<span class="text-base text-black"
+									>8 (495) 970-45-62 / +7 (915) 202-72-57</span
+								>
+							</a>
+						</li>
+						<li class="text-xs text-[#777]">
+							<a href="#"
+								>Электронная почта<br />
+								<span class="text-base text-black">grandlesmarket@mail.ru</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+
+			<div
+				class="grid grid-cols-3 items-center text-xs text-[#777] max-[1000px]:grid-cols-2 max-[1000px]:gap-6 max-[1000px]:pl-20 max-[740px]:grid-cols-1"
+			>
+				<p><a href="#">© 2005-2023 ГрандЛесМаркет. Все права защищены.</a></p>
+				<p class="underline">
+					<a href="#">Политика обработки персональных данных</a>
+				</p>
+				<div class="flex items-center gap-3">
+					<p class="">Связаться в мессенджерах::</p>
+					<img
+						class="cursor-pointer"
+						src="./assets/img/telegram.png"
+						alt="apps"
+					/>
+					<img
+						class="cursor-pointer"
+						src="./assets/img/whatsapp.png"
+						alt="apps"
+					/>
+					<img class="cursor-pointer" src="./assets/img/viber.png" alt="apps" />
+				</div>
+			</div>
+		</section>
+
+		<!-- JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<script>
+			var swiper = new Swiper('.mySwiper', {
+				slidesPerView: 2,
+				spaceBetween: 30,
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				breakpoints: {
+					280: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 2,
+						spaceBetween: 40,
+					},
+				},
+				autoplay: {
+					delay: 1000,
+					disableOnInteraction: false,
+				},
+			})
+		</script>
+	</body>
+</html>
